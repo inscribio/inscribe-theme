@@ -1,0 +1,100 @@
+/* Daisy UI customization */
+
+.input:focus, .textarea:focus {
+  @apply outline-none border-opacity-50;
+}
+
+input::placeholder, .textarea::placeholder {
+  @apply italic;
+}
+
+.tooltip:before, .tooltip:after {
+  @apply z-30 shadow;
+}
+
+.toggle, .toggle:checked {
+  @apply transition-all duration-200 ease-in-out rounded-full;
+  @apply bg-base-100 border-opacity-60 shadow-inner shadow-neutral/20;
+}
+
+.toggle:disabled {
+  @apply bg-base-100 border-neutral opacity-40;
+}
+
+.toggle:before {
+  @apply relative block left-0 w-1/2 h-full rounded-full;
+  @apply transition-all duration-200 ease-in-out;
+  @apply border-base-100 bg-neutral;
+  content: "";
+}
+
+.toggle:checked {
+  @apply bg-neutral border-opacity-0;
+}
+
+.toggle:checked:before,
+.toggle[checked="true"]:before {
+  @apply left-1/2 bg-base-100;
+}
+
+/* Button group styles for nested buttons (e.g. with tooltip wrapper) */
+.btn-group-start {
+  @apply rounded-r-none;
+}
+.btn-group-mid {
+  @apply rounded-r-none rounded-l-none;
+}
+.btn-group-end {
+  @apply rounded-l-none;
+}
+.btn-group-border .btn-group-mid {
+  @apply border-l border-r-base-100/10;
+}
+.btn-group-border .btn-group-end {
+  @apply border-l border-l-base-100/10;
+}
+
+/* Arrow for collapsing content */
+.arrow-collapse-toggle {
+  @apply appearance-none cursor-pointer min-w-[1.25rem] min-h-[1.25rem];
+}
+.arrow-collapse-toggle::before {
+  @apply relative block h-2 w-2 transition-all ease-in-out;
+  transition-duration: 0.2s;
+  top: 3px;
+  left: 1px;
+  content: "";
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+  box-shadow: 2px 2px;
+}
+.arrow-collapse-toggle:checked::before {
+  transform: rotate(225deg);
+}
+
+
+/* Notifications from vue-toastification */
+
+.Vue-Toastification__toast {
+  @apply alert max-w-xl min-w-[320px] w-fit;
+}
+
+.Vue-Toastification__toast-body {
+  @apply text-base font-serif;
+}
+
+.Vue-Toastification__toast--default {
+  @apply bg-base-300 text-base-content;
+}
+.Vue-Toastification__toast--success {
+  @apply alert-success;
+}
+.Vue-Toastification__toast--info {
+  @apply alert-info;
+}
+.Vue-Toastification__toast--warning {
+  @apply alert-warning;
+}
+.Vue-Toastification__toast--error {
+  @apply alert-error;
+}

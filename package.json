@@ -1,0 +1,9 @@
+{
+  "name": "inscribe-theme",
+  "version": "1.0.0",
+  "description": "CSS styles shared between inscrib.io apps",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Jędrzej Boczar"
+}
