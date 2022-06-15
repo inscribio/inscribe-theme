@@ -13,16 +13,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      mono: ["Fira Mono", "Andale Mono", "Courier New", "monospace"],
-      sans: [
-        "Open Sans",
-        "Optima",
-        "Avenir",
-        "Helvetica",
-        "Arial",
-        "sans-serif",
-      ],
-      serif: ["EB Garamond", "Garamond", "Georgia", "Times", "serif"],
+      mono: ["Fira Mono", "monospace"],
+      sans: ["Open Sans", "sans-serif"],
+      serif: ["EB Garamond", "serif"],
     },
   },
   plugins: [
