@@ -78,6 +78,20 @@ input::placeholder, .textarea::placeholder {
   transform: rotate(225deg);
 }
 
+/* Animations */
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 700ms ease-in-out 0s;
+}
 
 /* Notifications from vue-toastification */
 
