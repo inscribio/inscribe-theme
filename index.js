@@ -11,7 +11,17 @@
 
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      // Adds prose-quoteless which will not add quotes when rendering markdown ">" blocks
+      typography: {
+        quoteless: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:first-of-type::after': { content: 'none' },
+          }
+        }
+      }
+    },
     fontFamily: {
       mono: ["Fira Mono", "monospace"],
       sans: ["Open Sans", "sans-serif"],
