@@ -37,7 +37,7 @@ module.exports = {
           accent: "#ea9366",
           "accent-focus": "#e4743a",
           neutral: "#7a7469",
-          // neutral: "#5b5549",
+          "neutral-content": "#f5e9d0", // back to what was in daisyui 2.0
           "base-100": "#efe9d6",
           info: "#9fc7cb",
           success: "#9cd370",
