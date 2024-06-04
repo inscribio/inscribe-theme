@@ -60,6 +60,15 @@ input::placeholder, .textarea::placeholder {
   @apply border-l border-l-base-100/10;
 }
 
+/* Highlight buttons on hover to improve accessibility by adding text underline */
+.btn-ghost-underline {
+  @apply btn-ghost;
+  @apply underline underline-offset-8 decoration-transparent transition-colors duration-150;
+}
+.btn-ghost-underline:hover {
+  @apply decoration-current;
+}
+
 /* Arrow for collapsing content */
 .arrow-collapse-toggle {
   @apply appearance-none cursor-pointer min-w-[1.25rem] min-h-[1.25rem];
