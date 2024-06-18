@@ -62,11 +62,13 @@ input::placeholder, .textarea::placeholder {
 
 /* Highlight buttons on hover to improve accessibility by adding text underline */
 .btn-ghost-underline {
-  @apply btn-ghost;
-  @apply underline underline-offset-8 decoration-transparent transition-colors duration-150;
+  @apply btn-ghost relative;
 }
-.btn-ghost-underline:hover {
-  @apply decoration-current;
+.btn-ghost-underline:hover:after {
+  @apply absolute border-b border-base-100;
+  @apply bottom-[2px];
+  @apply w-[80%] h-[1px];
+  content: "";
 }
 
 /* Arrow for collapsing content */
