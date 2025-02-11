@@ -7,8 +7,8 @@
   "keywords": [],
   "author": "Jędrzej Boczar",
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.2",
-    "daisyui": "^3.8.2"
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "daisyui": "^3.9.4"
   }
 }
